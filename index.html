@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+<div>
+	<div class="parent">
+		<div class="d-flex">
+	    	<div class=" door">
+	    		<img src="door.png">
+	    	</div>
+
+	        <div class="door2">
+	    		<img src="door2.png">
+	    	</div>
+
+	    	<div class="door3">
+	    		<img src="door3.png">
+	    	</div>
+	    </div>
+	</div>
+
+
+	<div class="gg" style="display: none;">
+	<div class="" style="background-image:url('bg.jpg'); height: 800px;background-size: 100% ">
+		<h2 class="text-white">найти 3 объекта по гарри поттеру</h2>
+		<button class="btn-success button">выйти из игры</button>
+
+		<div class="col-1 gun" style="position:absolute">
+			<img src="gun.png" style="height: 60px; margin-left: 400px; margin-top: 250px">
+		</div>
+
+		<div class=" col-1 mantiya" style="position:absolute">
+			<img src="mantiya.png"style="height: 60px;margin-left: 890px; margin-top: 580px">
+		</div>
+
+		<div class="col-1 metla" style="position:absolute">
+			<img src="metla.png" style="height: 60px;
+			margin-left: 467px; margin-top: 482px">
+		</div>
+
+		<div class="col-1 ring" style="position:absolute">
+			<img src="ring.png" style="height: 20px;margin-left: 714px; margin-top: 530px">
+		</div>
+
+		<div class="col-1 palochka" style="position:absolute">
+			<img src="palochka.png" style="height: 60px;margin-left: 1024px; margin-top: 489px">
+		</div>
+		<div class="score text-white" style="font-size: 40px;margin-top: 10px;"></div>
+	</div>
+</div>
+ 
+ 	<div class="tt" style="display: none;">
+	<div class="" style="background-image:url('house.png'); height: 800px;background-size: 100% ">
+		<h2 class="text-white">найти 3 объекта по шумному дому</h2>
+		<button class="btn-success btn">выйти из игры</button>
+
+		<div class="col-1 shvabra" style="position:absolute">
+			<img src="shvabra.png" style="height: 60px; margin-left: 300px; margin-top: 250px">
+		</div>
+
+		<div class=" col-1 menzurka" style="position:absolute">
+			<img src="menzurka.png"style="height: 50px;margin-left: 740px; margin-top: 380px">
+		</div>
+
+		<div class="col-1 kva" style="position:absolute">
+			<img src="kva.png" style="height: 60px;
+			margin-left: 727px; margin-top: 652px">
+		</div>
+
+		<div class="col-1 ochki" style="position:absolute">
+			<img src="ochki.png" style="height: 50px;margin-left: 714px; margin-top: 530px">
+		</div>
+
+		<div class="col-1 tiara" style="position:absolute">
+			<img src="tiara.jpg" style="height: 30px;margin-left: 1124px; margin-top: 359px">
+		</div>
+		<div class="scores text-white" style="font-size: 40px;margin-top: 10px;"></div>
+	</div>
+</div>
+</div>
+
+
+
+
+<script type="text/javascript">
+	let score = 0;
+	document.querySelector(".door").onclick = function(){document.querySelector(".gg").style.display="block";document.querySelector(".parent").style.display="none";
+}
+
+	document.querySelector(".door2").onclick = function(){document.querySelector(".tt").style.display="block";document.querySelector(".parent").style.display="none";}
+
+	document.querySelector(".door3").onclick = function(){}
+
+
+
+
+	document.querySelector(".mantiya").onclick = function(){
+		document.querySelector(".mantiya").style.display="none";
+		document.querySelector(".score").innerHTML=score=score+1
+	}
+
+
+
+	document.querySelector(".palochka").onclick = function(){
+		document.querySelector(".palochka").style.display="none";
+		document.querySelector(".score").innerHTML=score=score+1
+	}
+
+
+	document.querySelector(".metla").onclick = function(){
+		document.querySelector(".metla").style.display="none";
+		document.querySelector(".score").innerHTML=score=score+1
+	}
+
+
+	document.querySelector(".button").onclick = function(){
+		document.querySelector(".gg").style.display="none";
+		document.querySelector(".parent").style.display="block"
+	}
+
+	document.querySelector(".tiara").onclick = function(){
+		document.querySelector(".tiara").style.display="none";
+		document.querySelector(".score").innerHTML=score=score+1
+	}
+
+	document.querySelector(".kva").onclick = function(){
+		document.querySelector(".kva").style.display="none";
+		document.querySelector(".score").innerHTML=score=score+1
+	}
+
+	document.querySelector(".menzurka").onclick = function(){
+		document.querySelector(".menzurka").style.display="none";
+		document.querySelector(".score").innerHTML=score=score+1
+	}
+
+	document.querySelector(".btn").onclick = function(){
+		document.querySelector(".tt").style.display="none";
+		document.querySelector(".parent").style.display="block"
+	}
+</script>
+</body>
+</html>
